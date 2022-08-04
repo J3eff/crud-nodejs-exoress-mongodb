@@ -4,11 +4,12 @@
   "description": "<h1 align=\"center\"> API Rest com Node.Js e MongoDb  </h1>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js localhost 3000"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/J3eff/crud-nodejs-express-mongodb.git"
+    "url": "git+https://github.com/J3eff/crud-nodejs-express-mongodb.git"    
   },
   "keywords": [],
   "author": "",
