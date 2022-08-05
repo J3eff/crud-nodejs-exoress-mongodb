@@ -8,8 +8,8 @@
 
 <h3 align="center"> Objetivos </h3>
 
-- [x] Criar uma API nos padrões RESTful, que terá um CRUD;
-- [x] Os endpoints serão criados com os verbos HTTP que correspondem a ação do mesmo;
-- [x] As resposta serão baseadas em JSON, retornado também o status correto;
-- [x] Aplicaremos validações simples, para simular o 'mundo real';
+- [x] Criar uma API nos padrões RESTful, que contem um CRUD;
+- [x] Os endpoints foram criados com os verbos HTTP que correspondem a ação do mesmo;
+- [x] As resposta são baseadas em JSON, retornado também o status correto;
+- [x] Apliquei validações simples, para simular o 'mundo real';
 
