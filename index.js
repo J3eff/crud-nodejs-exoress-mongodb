@@ -1,4 +1,5 @@
 //config inicial
+require('dotenv').config()
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
@@ -13,9 +14,9 @@ app.use(
 app.use(express.json());
 
 // rotas da API
-const personRoutes = require('./routes/personRoutes')
+const personRoutes = require("./routes/personRoutes");
 
-app.use('/person', personRoutes)
+app.use("/person", personRoutes);
 
 // rota inicial / endpoint
 app.get("/", (req, res) => {
@@ -23,9 +24,12 @@ app.get("/", (req, res) => {
 });
 
 //entregar uma porta
+const DB_USER = process.env.DB_USER;
+const DB_PASSWORD = encodeURIComponent(process.env.DB_PASSWORD);
+
 mongoose
   .connect(
-    "mongodb+srv://xTapee:Nhd8hinyeW3m0WGY@apicluster.qhlqu.mongodb.net/bancodaapi?retryWrites=true&w=majority"
+    `mongodb+srv://${DB_USER}:${DB_PASSWORD}@apicluster.qhlqu.mongodb.net/bancodaapi?retryWrites=true&w=majority`
   )
   .then(() => {
     console.log("Connectamos ao MongoDB");
